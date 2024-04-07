@@ -7,6 +7,7 @@
     "plugin:@typescript-eslint/recommended",
     "eslint-config-prettier"
   ],
+  // "plugins": ["@react-three"],
   "settings": {
     "react": {
       // Tells eslint-plugin-react to automatically detect the version of React to use.
@@ -18,9 +19,10 @@
         "paths": ["src"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/no-unknown-property": "off"
     }
-  },
-  "rules": {
-    "react/react-in-jsx-scope": "off"
   }
 }
