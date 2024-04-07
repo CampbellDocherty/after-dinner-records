@@ -1,5 +1,5 @@
-const App = () => {
-  return <p>Frontend fork by Cammy!</p>;
-};
+import { ThreeCanvas } from './ThreeCanvas';
 
-export default App;
+export default function App() {
+  return <ThreeCanvas />;
+}
