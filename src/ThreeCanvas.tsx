@@ -3,9 +3,11 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
+const GLTF_FILE = '/poly.json';
+
 const Model = () => {
   const group = useRef(null);
-  const { nodes } = useGLTF('src/poly.gltf');
+  const { nodes } = useGLTF(GLTF_FILE);
   const node = nodes['Node_#0'] as THREE.Mesh;
   return (
     <group ref={group} dispose={null}>
@@ -35,4 +37,4 @@ export const ThreeCanvas = () => {
   );
 };
 
-useGLTF.preload('src/poly.gltf');
+useGLTF.preload(GLTF_FILE);
