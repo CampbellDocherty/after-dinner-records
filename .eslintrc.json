@@ -7,7 +7,7 @@
     "plugin:@typescript-eslint/recommended",
     "eslint-config-prettier"
   ],
-  "plugins": ["@react-three"],
+  // "plugins": ["@react-three"],
   "settings": {
     "react": {
       // Tells eslint-plugin-react to automatically detect the version of React to use.
