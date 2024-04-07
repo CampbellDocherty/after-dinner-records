@@ -21,7 +21,7 @@ export const ThreeCanvas = () => {
     <Canvas
       camera={{ position: [-18, 9, 12.25], fov: 14 }}
       style={{
-        backgroundColor: '#111a21',
+        backgroundColor: '#0e161c',
         width: '100vw',
         height: '100vh',
       }}
