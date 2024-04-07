@@ -19,7 +19,7 @@ const Model = () => {
 export const ThreeCanvas = () => {
   return (
     <Canvas
-      camera={{ position: [2, 0, 12.25], fov: 15 }}
+      camera={{ position: [-18, 9, 12.25], fov: 14 }}
       style={{
         backgroundColor: '#111a21',
         width: '100vw',
@@ -32,7 +32,7 @@ export const ThreeCanvas = () => {
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-      <OrbitControls />
+      <OrbitControls maxDistance={30} />
     </Canvas>
   );
 };
