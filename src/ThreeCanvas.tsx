@@ -3,9 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
-const GLTF_FILE = process.env.PUBLIC_URL
-  ? process.env.PUBLIC_URL + '/poly.json'
-  : '/poly.json';
+const GLTF_FILE = '/poly.json';
 
 console.log(process.env.PUBLIC_URL);
 
