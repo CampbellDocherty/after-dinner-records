@@ -12,7 +12,7 @@ const vitestConfig: VitestUserConfigInterface = {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    base: "./",
+    base: "/adr",
     define: {
       'process.env.PUBLIC_URL': JSON.stringify(env.PUBLIC_URL)
     },

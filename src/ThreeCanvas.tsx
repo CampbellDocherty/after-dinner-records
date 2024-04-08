@@ -7,6 +7,8 @@ const GLTF_FILE = process.env.PUBLIC_URL
   ? process.env.PUBLIC_URL + '/poly.json'
   : '/poly.json';
 
+console.log(process.env.PUBLIC_URL);
+
 const Model = () => {
   const group = useRef(null);
   const { nodes } = useGLTF(GLTF_FILE);
