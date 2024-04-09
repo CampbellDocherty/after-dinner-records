@@ -2,10 +2,8 @@ import { useRef, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import * as poly from './poly.json';
 
-const GLTF_FILE = '/poly.json';
+const GLTF_FILE = import.meta.env.DEV ? '/poly.json' : '/adr/poly.json';
 
 const Model = () => {
   const group = useRef(null);
