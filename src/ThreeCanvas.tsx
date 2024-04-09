@@ -5,8 +5,6 @@ import * as THREE from 'three';
 
 const GLTF_FILE = '/poly.json';
 
-console.log(process.env.PUBLIC_URL);
-
 const Model = () => {
   const group = useRef(null);
   const { nodes } = useGLTF(GLTF_FILE);
